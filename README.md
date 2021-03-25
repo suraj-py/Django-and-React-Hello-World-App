@@ -32,7 +32,7 @@ Step 6: Now move to frontend folder and open another terminal and run this
 
 Step 7: Now Drag frontend and Drop it to backend
 
-Step 8: Open settings.py in backend and this
+Step 8: Open settings.py in backend and edit this
 
     - 
     TEMPLATES = [
