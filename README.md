@@ -64,6 +64,23 @@ Step 9: Now create URL for our app
 
 Step 10: Open App.js in your frontend and Edit your component
 
+    function App() {
+    return (
+        <>
+        <div className='App'>
+            <div className="App-header">
+                <h1 className="heading">Django + React</h1>
+                <h1>Hello World App</h1>
+                <div className="row">
+                <img src={d_logo} className="D-logo column " alt="logo" />
+                <img src={r_logo} className="App-logo column" alt="logo" />
+                </div>
+            </div>
+        </div>
+        </>
+    );
+    }
+
     - now after making changes run this command in your frontend terminal window
 
     $ npm run build
