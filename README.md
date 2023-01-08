@@ -34,36 +34,39 @@ Step 7: Now Drag frontend and Drop it to backend
 
 Step 8: Open settings.py in backend and edit this
 
-    - 
+```python3
     TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build') // Edit this line
+            os.path.join(BASE_DIR, 'frontend/build') # Edit this line
         ],
         'APP_DIRS': True,
 
         ...
     }
-
-    and
-
-    - 
+ ```
+and
+    
+```python
     STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'frontend/build/static') // Edit this line
+        os.path.join(BASE_DIR, 'frontend/build/static') # Edit this line
     ]
+```
 
 Step 9: Now create URL for our app
 
     - open urls.py and add TemplateView path
-
-    urlpatterns = [
+```python
+ urlpatterns = [
         path('admin/', admin.site.urls),
-        path('', TemplateView.as_view(template_name = 'index.html')) // Add this line
+        path('', TemplateView.as_view(template_name = 'index.html')) # Add this line
     ]
+```
 
 Step 10: Open App.js in your frontend and Edit your component
 
+```javascript
     function App() {
     return (
         <>
@@ -80,6 +83,7 @@ Step 10: Open App.js in your frontend and Edit your component
         </>
     );
     }
+```
 
     - now after making changes run this command in your frontend terminal window
 
